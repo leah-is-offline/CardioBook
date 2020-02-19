@@ -1,0 +1,1 @@
+gradle scripts> build.gradle> Module:app >  dependencies {... >  implementation 'com.google.code.gson:gson:2.8.2'
