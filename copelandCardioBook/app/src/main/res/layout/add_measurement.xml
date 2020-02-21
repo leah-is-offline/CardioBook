@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="145dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Confirm"
+        android:textColor="#EAF1EA"
+        android:textSize="24sp"
+        app:fontFamily="@font/bungee_shade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cancelAddButton"
+        android:layout_width="145dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Cancel"
+        android:textColor="#FCFFFFFF"
+        android:textSize="24sp"
+        app:fontFamily="@font/bungee_shade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/entryMessage"
+        android:layout_width="359dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Create an Entry to Add!"
+        android:textColor="#FAEFF8EF"
+        android:textSize="36sp"
+        app:fontFamily="@font/bungee_shade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/systolicEntry"
+        android:digits="0123456789"
+        android:textColor="#FCF5F5"
+        android:layout_width="83dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:hint="systolic"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/diastolicEntry"
+        android:digits="0123456789"
+        android:textColor="#FCF5F5"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:hint="diastolic"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/heartRateEntry"
+        android:digits="0123456789"
+        android:textColor="#FCF5F5"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="heart rate (bpm)"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/entryMessage" />
+
+    <EditText
+        android:id="@+id/yearEntry"
+        android:digits="0123456789"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="292dp"
+        android:ems="10"
+        android:hint="yyyy"
+        android:inputType="date"
+        android:textColor="#FCF5F5"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hourEntry"
+        android:digits="0123456789"
+        android:textColor="#FCF5F5"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="352dp"
+        android:ems="10"
+        android:hint="hh"
+        android:inputType="time"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/commentEntry"
+        android:layout_width="290dp"
+        android:layout_height="98dp"
+        android:background="#E4DFDD"
+        android:hint="up to 20 characters"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <EditText
+        android:id="@+id/monthEntry"
+        android:digits="0123456789"
+        android:textColor="#FCF5F5"
+        android:layout_width="58dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:ems="10"
+        android:hint="mm"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dayEntry"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:textColor="#FCF5F5"
+        android:layout_width="63dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="dd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/minuteEntry"
+        android:digits="0123456789"
+        android:textColor="#FCF5F5"
+        android:layout_width="58dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:ems="10"
+        android:hint="mm"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/BPText"
+        android:layout_width="196dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="188dp"
+        android:text="*Enter your Blood   Pressure:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/HRText"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="232dp"
+        android:text="*Enter your Heart Rate:"
+        android:textColor="#ECDBDB"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/entryMessage" />
+
+    <TextView
+        android:id="@+id/DATEtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginRight="224dp"
+        android:text="*Enter the Date:"
+        android:textColor="#F7FCF3F3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TIMEtext"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:text="*Enter the Time:"
+        android:textColor="#F7F8F3F3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/COMMENTText"
+        android:layout_width="151dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginRight="192dp"
+        android:text="Enter a Comment:"
+        android:textColor="#EBE6E6"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

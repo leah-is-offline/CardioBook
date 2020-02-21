@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">copeland-CardioBook</string>
+    <string-array name = "menu">
+        <item>OPTIONS</item>
+        <item>Add</item>
+        <item>View/Edit</item>
+        <item>Save</item>
+    </string-array>
+</resources>
